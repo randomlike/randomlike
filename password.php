@@ -5,3 +5,4 @@ for($i = 0;$i < $len;$i++)
 {
 echo chr(rand(32,127));
 }
+echo "<br/><a href=''>Relancer</a>";
