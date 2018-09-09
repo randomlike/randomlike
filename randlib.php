@@ -15,5 +15,5 @@ for($n = 0;$n < 3;$n++)
 $out =+ (pow(256,$n)*ord($raw[$n]));
 }
 file_put_contents("counter.txt",$pos + 3);
-return intval((($out/pow(256,8))*($max-$min))+$min);
+return intval((($out/pow(256,3))*($max-$min))+$min);
 }
