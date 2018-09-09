@@ -10,7 +10,7 @@ echo "piste ".$e." :::: ";
 for($l = 0;$l<$len;$l++)
 {
 $g[$i] = $g[$i] + srcrand(5,16);
-echo $g[$i];echo ", ";
+echo $g[$i];echo " -> ";
 }echo "<br/>";}
 echo "Le Gagnant A Ete A :::: ".max($g);
 echo "<br/><a href=''>Relancer</a>";
