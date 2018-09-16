@@ -12,6 +12,6 @@ exit(1);
 }
 for ($n = 0;$n < $frame;$n++)
 {
-$a = srcrand(1,1677217);
+$a = srcrand(1,16777217);
 echo $a.";".$begin.";".$end."\n";
 }
