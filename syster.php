@@ -13,11 +13,11 @@ exit(1);
 for ($n = 1;$n <= $frame;$n++)
 {
 $offset1 = srcrand8bit();
-$increment1 = intval(srcrand(0,128)/2)+1;
+$increment1 = (intval(srcrand8bit(0)/2)*2)+1;
 if ($demi)
 {
 $offset2 = srcrand8bit();
-$increment2 = intval(srcrand8bit()/2)+1;
+$increment2 = (intval(srcrand8bit(0)/2)*2)+1;
 }
 else
 {
