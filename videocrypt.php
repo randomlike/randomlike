@@ -1,6 +1,7 @@
 <?php
+set_time_limit(0);
 require("randlib.php");
-$limit_frame = 1000; // Define The Limite Frame
+$limit_frame = 999999; // Define The Limite Frame
 header("Content-Type:text/plain");
 $begin = $_GET["begin"];
 $end = $_GET["end"];
