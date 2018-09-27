@@ -10,12 +10,12 @@ function srcrand($min,$max)
 global $raw;
 $out = 0;
 $pos = file_get_contents("counter.txt");
-for($n = 0;$n < 3;$n++)
+for($n = 0;$n < 2;$n++)
 {
 $out =+ (pow(256,$n)*ord($raw[$n+$pos]));
 }
-file_put_contents("counter.txt",$pos + 3);
-return intval((($out/pow(256,3))*($max-$min))+$min);
+file_put_contents("counter.txt",$pos + 2);
+return intval((($out/pow(256,2))*($max-$min))+$min);
 }
 function srcrand8bit()
 {
