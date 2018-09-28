@@ -4,7 +4,8 @@ urandom,/dev/urandom,
 srandom,/dev/srandom,https://github.com/josenk/srandom
 qrandom,/dev/qrandom,https://github.com/lmacken/quantumrandom
 blockrandom,,https://github.com/billpmurphy/blockchain-random
-TrueRNG,/dev/TrueRNG,http://ubld.it/truerng_v3
-TrueRNG,/dev/TrueRNG,http://ubld.it/products/truerngpro
+TrueRNG v3,/dev/TrueRNG,http://ubld.it/truerng_v3
+TrueRNG Pro,/dev/TrueRNG,http://ubld.it/products/truerngpro
 random.org,,https://www.random.org/
-non-true-random,,https://github.com/jaybosamiya/true-random
+bad-true-random,,https://github.com/jaybosamiya/true-random
+sha3sum,,https://github.com/maandree/sha3sum
