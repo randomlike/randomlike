@@ -10,3 +10,4 @@ random.org,,https://www.random.org/
 bad-true-random,,https://github.com/jaybosamiya/true-random
 sha3sum,,https://github.com/maandree/sha3sum
 nettle,,https://www.lysator.liu.se/~nisse/nettle/
+openssl,,https://www.openssl.org/
