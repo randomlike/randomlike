@@ -11,3 +11,4 @@ bad-true-random,,https://github.com/jaybosamiya/true-random
 sha3sum,,https://github.com/maandree/sha3sum
 nettle,,https://www.lysator.liu.se/~nisse/nettle/
 openssl,,https://www.openssl.org/
+jrandom,/dev/jrandom,https://github.com/byte-mug/jrandom
