@@ -2,6 +2,7 @@
 require("randlib.php");
 $pist = $_GET["pist"];
 $len = $_GET["len"];
+$g = array_fill(0,$pist,0);
 echo "Votre Resultat De La Course A Ete Generer ::::::<br/>";
 for($i = 0;$i<$pist;$i++)
 {
