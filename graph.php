@@ -1,4 +1,5 @@
 <?php
+set_time_limit(0);
 require("randlib.php");
 $maxedges = 999999; // Define The Limite Frame
 header("Content-Type:text/plain");
