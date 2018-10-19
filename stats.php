@@ -1,7 +1,7 @@
 <?php
 echo "<h2>Les Statistique De La Source Aléatoire</h2>";
-require("randlib.php");
-$getcount = intval(file_get_contents("counter.txt"));
+require("config.php");
+$getcount = intval(file_get_contents($randomsourcecount));
 $randmoment = file_get_contents($randomsource,null,null,0,$getcount);
 $h = array_fill(0,256,0);
 $p = array_fill(0,256,0);
