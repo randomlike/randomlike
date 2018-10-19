@@ -11,7 +11,7 @@ global $raw;
 $out = 0;
 $pos = intval(file_get_contents($randomsourcecount));
 $out = (pow(256,2)*ord($raw[$pos+2]))+(pow(256,1)*ord($raw[$pos+1]))+(pow(256,0)*ord($raw[$pos]));
-file_put_contents("counter.txt",$pos + 3);
+file_put_contents($randomsourcecount,$pos + 3);
 return intval((($out/16777216)*($max-$min))+$min);
 }
 function srcrand8bit()
@@ -19,14 +19,14 @@ function srcrand8bit()
 global $raw;
 $pos = intval(file_get_contents("counter.txt"));
 $out = ord($raw[$pos]);
-file_put_contents("counter.txt",$pos + 1);
+file_put_contents($randomsourcecount,$pos + 1);
 return $out;
 }
 function srcranduniform($min,$max)
 {
 global $raw;
 $out = 0;
-$pos = intval(file_get_contents("counter.txt"));
+$pos = intval(file_get_contents($randomsourcecount));
 $out = (pow(256,2)*ord($raw[$pos+2]))+(pow(256,1)*ord($raw[$pos+1]))+(pow(256,0)*ord($raw[$pos]));
 file_put_contents("counter.txt",$pos + 3);
 return (($out/16777216)*($max-$min))+$min;
