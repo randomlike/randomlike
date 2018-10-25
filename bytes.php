@@ -1,4 +1,5 @@
 <?php
+set_time_limit(0);
 require("randlib.php");
 $len = $_GET["len"];
 header("Content-Type:application/octet-stream");
