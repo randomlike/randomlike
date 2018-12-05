@@ -10,7 +10,8 @@ $s = $s + 1;
 $t = srcrand(1,$nb + 1);
 if ($array[$t] == true)
 {
-echo "Le Numero ".$t." S'est Etteint A La Position ".$s."<br/>";
+$res = $rnb - 1;
+echo "Le Numero ".$t." S'est Etteint A La Position ".$s." Il Reste ".$res."<br/>";
 $array[$t] = false;
 $rnb = $rnb - 1;
 }
