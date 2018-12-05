@@ -3,7 +3,7 @@ require("randlib.php");
 $nb = $_GET["nb"];
 $array = array_fill(1,$nb,true);
 $rnb = $nb;
-echo "Votre Demi-Vie A Ete Générer ::::::::: <br/>"
+echo "Votre Demi-Vie A Ete Générer ::::::::: <br/>";
 while (boolval($rnb))
 {
 $s = $s + 1;
