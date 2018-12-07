@@ -2,7 +2,8 @@
 set_time_limit(0);
 require("randlib.php");
 $len = $_GET["len"];
-header("Content-Type:application/octet-stream");
+$binary = $_GET["binary"];
+header("Content-Type:text/plain");
 $len_limit = 999999; // define the limit
 if ($len > $len_limit)
 {
@@ -11,5 +12,12 @@ exit(1);
 }
 for ($n = 0;$n < $len;$n++)
 {
+if ($binary)
+{
+echo sprintf("%08d",decbin(srcrand8bit()));
+}
+else
+{
 echo chr(srcrand8bit());
+}
 }
