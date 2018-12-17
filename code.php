@@ -8,3 +8,4 @@ $wordlistarray = explode("\n",$wordfile);
 $nbword = count($wordlistarray);
 echo "<font face='code' size='7'>code@";
 echo $wordlistarray[srcrand(0,$nbword)]. "</font>";
+echo "<br/><a href=''>Relancer</a>";
