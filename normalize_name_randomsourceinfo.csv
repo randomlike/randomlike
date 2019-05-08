@@ -15,3 +15,5 @@ jrandom,/dev/jrandom,https://github.com/byte-mug/jrandom
 RadioGatun,,https://github.com/samboy/rg32hash
 parandom,,https://github.com/hayamiz/Parandom
 wolfram rule 30,,http://www.hevanet.com/cristofd/brainfuck/random.b
+frandom,/dev/frandom,http://www.billauer.co.il/frandom.html
+erandom,/dev/erandom,http://www.billauer.co.il/frandom.html
