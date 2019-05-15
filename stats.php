@@ -15,4 +15,20 @@ for ($m = 0;$m < 256;$m++)
 {
 echo "L'octet Numéro ".$m." Apparaissais ".$h[$m]." Fois, Et Son Dernier Apparition Est A La Position ".$p[$m]."<br/>";
 }
+if ($randomcircle)
+{
+echo "<br/>Le Cercle ::::<br/>";
+echo "<textarea rows='24' cols='80'>";
+$descriptorspec = array(
+0 => array("pipe","r"),
+1 => array("pipe","w"),
+2 => array("file","/tmp/errors.txt","w")
+);
+$process = proc_open("circle -b",$descriptorspec,$pipes);
+fwrite($pipes[0],$randmoment);
+fclose($pipes[0]);
+echo stream_get_contents($pipes[1]);
+fclose($pipes[1]);
+echo "</textarea><br/>";
+}
 echo "<br/>RAPPELLE ::::: Le Hasard Ne Ce Controle Pas !";
