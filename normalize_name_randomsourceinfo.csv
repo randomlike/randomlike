@@ -17,3 +17,4 @@ parandom,,https://github.com/hayamiz/Parandom
 wolfram rule 30,,http://www.hevanet.com/cristofd/brainfuck/random.b
 frandom,/dev/frandom,http://www.billauer.co.il/frandom.html
 erandom,/dev/erandom,http://www.billauer.co.il/frandom.html
+tfrand,,https://github.com/lynxlynx/tfnoisegen
