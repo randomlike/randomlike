@@ -23,3 +23,4 @@ $o = srcrand(0,strlen($dicecar));
 echo $dicecar[$o];
 }
 echo "</font>";
+echo "<br/><a href=''>Relancer</a>";
