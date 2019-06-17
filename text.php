@@ -2,7 +2,8 @@
 require("randlib.php");
 $wordlistpath = "listfr.txt";
 $nb = $_GET["nb"];
-$wordfile = file_get_contents($wordlistpath);
+$lang = $_GET["lang"];
+$wordfile = file_get_contents("list".$lang.".txt");
 $wordlistarray = explode("\n",$wordfile);
 $nbword = count($wordlistarray);
 echo "Votre Texte à Eté Generer ::::::::: ";
