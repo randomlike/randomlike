@@ -24,7 +24,7 @@ $descriptorspec = array(
 1 => array("pipe","w"),
 2 => array("file","/tmp/errors.txt","w")
 );
-$process = proc_open("circle -b",$descriptorspec,$pipes);
+$process = proc_open("bytes-circle -b",$descriptorspec,$pipes);
 fwrite($pipes[0],$randmoment);
 fclose($pipes[0]);
 echo stream_get_contents($pipes[1]);
